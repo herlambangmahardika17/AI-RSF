@@ -17,7 +17,7 @@ if API_KEY:
     genai.configure(api_key=API_KEY)
     
     # Menggunakan Gemini 1.5 Flash (Cocok untuk membaca jutaan teks/data Excel besar)
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+    model = genai.GenerativeModel('gemini-pro')
 
     # 3. Membaca Data dari Excel
     @st.cache_data
